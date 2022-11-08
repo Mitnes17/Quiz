@@ -2,11 +2,18 @@ import { FC } from 'react';
 import { Props } from './Variants';
 import * as S from './styled';
 
-export const Variants: FC<Props> = ({ variants, onClick }) => {
+export const Variants: FC<Props> = ({ question, onClick }) => {
+  const variant = question.variants;
+
   return (
     <S.List>
-      {variants.map((text: string) => (
-        <li {...{ onClick }}>{text}</li>
+      {variant.map((text: string, index: number) => (
+        <li
+          onClick={() => onClick(index)}
+          key={index}
+        >
+          {text}
+        </li>
       ))}
     </S.List>
   );

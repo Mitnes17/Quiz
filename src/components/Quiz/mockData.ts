@@ -43,4 +43,5 @@ export const questions = [
     correct: 0,
     id: 5,
   },
+  {},
 ];
