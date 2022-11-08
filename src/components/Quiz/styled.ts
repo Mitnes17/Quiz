@@ -53,12 +53,16 @@ export const ProgressBar = styled.div`
 
   &::after {
     content: '';
-    width: 500px;
+    width: 296px;
     height: 7px;
     border-radius: 30px;
     background-color: lightgray;
     position: absolute;
     z-index: -1;
+
+    @media (min-width: 768px) {
+      width: 500px;
+    }
   }
 `;
 
