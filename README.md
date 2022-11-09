@@ -1,3 +1,19 @@
+#Quiz App | REACT questions
+
+A small beautiful Quiz App with responsive desing (mobile and desktop versions) and result card;
+
+Test your theoretical skills :D
+
+Technology stack:
+
+-React
+
+-Styled Components
+
+-TypeScript
+
+You can see it on vercel: https://quiz-mitnes17.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
