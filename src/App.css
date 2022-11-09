@@ -1,6 +1,5 @@
 .App {
   display: flex;
   justify-content: center;
-  padding-top: calc(50% - 50px);
-  height: 100vh;
+  padding-top: 80px;
 }

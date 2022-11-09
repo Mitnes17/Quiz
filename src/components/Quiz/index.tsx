@@ -10,6 +10,7 @@ export const Quiz = () => {
 
   const choose = (index: number) => {
     setStep(step + 1);
+
     if (questions[step].correct === index) setCorrect(correct + 1);
   };
 
@@ -25,6 +26,7 @@ export const Quiz = () => {
         <S.Container>
           <S.ProgressBar style={{ width: `${percentage}%` }}></S.ProgressBar>
           <S.H2>{title}</S.H2>
+
           <Variants
             onClick={choose}
             {...{ question }}
