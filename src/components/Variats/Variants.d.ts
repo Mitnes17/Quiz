@@ -1,6 +1,8 @@
+import { Question } from '../Quiz';
+
 export type StyleProps = {};
 
 export type Props = StyleProps & {
-  onClick: any;
-  question: any;
+  onClick: (e: number) => void;
+  question: Question;
 };

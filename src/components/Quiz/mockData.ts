@@ -63,5 +63,10 @@ export const questions = [
     correct: 1,
     id: 9,
   },
-  {},
+  {
+    title: 'The state changes, component will',
+    variants: ['do nothing', 'be re-rendered', 'be created again from scratch'],
+    correct: 1,
+    id: 9,
+  },
 ];

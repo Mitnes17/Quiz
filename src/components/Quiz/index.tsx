@@ -3,9 +3,15 @@ import { Variants } from '../Variats';
 import { questions } from './mockData';
 import * as S from './styled';
 
+export type Question = {
+  title: string;
+  variants: Array<string>;
+  correct: number;
+  id: number;
+};
+
 export const Quiz = () => {
   const [step, setStep] = useState(0);
-
   const [correct, setCorrect] = useState(0);
 
   const choose = (index: number) => {
@@ -16,7 +22,7 @@ export const Quiz = () => {
 
   const title = questions[step].title;
 
-  const question = questions[step];
+  const question: Question = questions[step];
 
   const percentage = Math.round((step / (questions.length - 1)) * 100);
 
